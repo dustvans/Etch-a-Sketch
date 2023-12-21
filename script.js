@@ -11,6 +11,10 @@ function createGrid(size = 16) {
         gridElement.style.width = `${(400 / size)}px`;
         gridElement.style.height = `${(400 / size)}px`;
 
+        gridElement.addEventListener('mouseover', () => {
+            gridElement.style.backgroundColor = 'blue';
+        });
+
         grid.appendChild(gridElement);
     }
 
@@ -26,3 +30,16 @@ changeLayout.addEventListener('click', () =>{
 
     createGrid(newLayout)
 });
+
+const reset = document.createElement('button');
+reset.textContent = 'Reset';
+reset.style.margin = '5px';
+
+reset.addEventListener('click', () => {
+    const gridElement = document.querySelectorAll('.grid-item')
+    gridElement.forEach(element => {
+        element.style.backgroundColor = 'transparent';
+    });
+});
+
+grid.appendChild(reset);

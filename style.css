@@ -9,10 +9,6 @@
     outline: 1px solid red;
 }
 
-.grid-item:hover {
-    background-color: blue;
-}
-
 #change-layout {
     margin: 5px;
 }
