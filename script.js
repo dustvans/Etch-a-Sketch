@@ -1,5 +1,14 @@
 createGrid();
 
+const reset = document.querySelector('#reset');
+reset.addEventListener('click', () => {
+    const gridElement = document.querySelectorAll('.grid-item')
+    gridElement.forEach(element => {
+        element.style.backgroundColor = 'transparent';
+    });
+});
+
+
 function createGrid(size = 16) {
     const grid = document.querySelector('#grid');
     grid.innerHTML = '';
@@ -30,16 +39,3 @@ changeLayout.addEventListener('click', () =>{
 
     createGrid(newLayout)
 });
-
-const reset = document.createElement('button');
-reset.textContent = 'Reset';
-reset.style.margin = '5px';
-
-reset.addEventListener('click', () => {
-    const gridElement = document.querySelectorAll('.grid-item')
-    gridElement.forEach(element => {
-        element.style.backgroundColor = 'transparent';
-    });
-});
-
-grid.appendChild(reset);
