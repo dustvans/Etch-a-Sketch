@@ -1,10 +1,10 @@
 createGrid();
 
-const reset = document.querySelector('#reset');
-reset.addEventListener('click', () => {
+const erase = document.querySelector('#erase');
+erase.addEventListener('click', () => {
     const gridElement = document.querySelectorAll('.grid-item')
     gridElement.forEach(element => {
-        element.style.backgroundColor = 'aliceblue';
+        element.style.backgroundColor = 'rgba(240, 248, 255, 0.57)';
     });
 });
 
@@ -34,10 +34,10 @@ changeLayout.addEventListener('click', () =>{
     let newLayout = prompt("New layout size? Enter the amount of squares on one side:")
 
     while (newLayout > 100) {
-        newLayout = prompt("New layout size must be less than 100, try again:");
+        newLayout = prompt("New layout size must be more than 0 but less than 100, try again:");
     }
 
-    if (newLayout == "") {
+    if (newLayout == "" || newLayout == 0 || newLayout === null) {
         newLayout = 16;
     }
 
