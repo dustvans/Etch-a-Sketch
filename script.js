@@ -4,7 +4,7 @@ const erase = document.querySelector('#erase');
 erase.addEventListener('click', () => {
     const gridElement = document.querySelectorAll('.grid-item')
     gridElement.forEach(element => {
-        element.style.backgroundColor = 'rgba(240, 248, 255, 0.57)';
+        element.style.backgroundColor = 'rgb(190, 196, 202)';
     });
 });
 
