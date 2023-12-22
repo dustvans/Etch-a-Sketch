@@ -1,18 +1,82 @@
+* {
+    background-color: rgb(177, 175, 172);
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background-color: red;
+}
+
+h1 {
+    background-color: red;
+    color: rgb(231, 231, 65);
+    font-family: 'Brush Script MT';
+}
+
+h3 {
+    background-color: red;
+    color: rgb(231, 231, 65);
+    margin: auto;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#game, #buttons {
+    background-color: red;
+}
+
+#game {
+    padding: 25px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+}
+
 #grid {
     display: flex;
     flex-wrap: wrap;
     width: 400px;
     height: auto;
+    justify-content: center;
 }
 
 .grid-item {
-    outline: 1px solid red;
+    background-color: rgba(240, 248, 255, 0.57);
+    outline: 1px solid rgb(0, 0, 0);
 }
 
-#change-layout {
-    margin: 5px;
+#change-layout, #reset {
+    width: 50px; 
+    height: 50px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-#reset {
-    margin: 5px;
+#change-layout:hover, #reset:hover {
+    background-color: lightgray;
 }
