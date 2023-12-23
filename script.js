@@ -21,7 +21,7 @@ function createGrid(size = 16) {
         gridElement.style.height = `${(400 / size)}px`;
 
         gridElement.addEventListener('mouseover', () => {
-            gridElement.style.backgroundColor = '#000000';
+            gridElement.style.backgroundColor = 'rgb(61, 61, 61)';
         });
 
         grid.appendChild(gridElement);

@@ -5,7 +5,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(86, 85, 84);
+    background-color: #473f3f;
 }
 
 #title {
@@ -69,7 +69,7 @@ h3 {
 
 .grid-item {
     background-color: rgb(190, 196, 202);
-    outline: 1px solid rgb(0, 0, 0);
+    outline: 1px solid rgb(61, 61, 61);
 }
 
 #change-layout, #erase {
